@@ -33,10 +33,10 @@ body {
 
 /* Header */
 .header {
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .logo {
@@ -47,8 +47,8 @@ body {
 }
 
 .logo-image {
-    max-width: 200px;
-    max-height: 150px;
+    max-width: 300px;
+    max-height: 220px;
     width: auto;
     height: auto;
     object-fit: contain;
