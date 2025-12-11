@@ -14,6 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
     setupFilters();
 });
 
+// Smooth scroll to projects section
+function scrollToProjects() {
+    const projectsSection = document.getElementById('projects-section');
+    if (projectsSection) {
+        projectsSection.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
 // Load projects from GitHub API
 async function loadProjects() {
     const loading = document.getElementById('loading');
