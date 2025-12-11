@@ -158,9 +158,6 @@ function renderProjects() {
                     <span class="language-dot" style="background-color: ${getLanguageColor(project.language)}"></span>
                     <span>${project.language}</span>
                 </div>
-                <div class="project-date">
-                    Updated ${formatDate(project.updated)}
-                </div>
             </div>
         </div>
     `).join('');
