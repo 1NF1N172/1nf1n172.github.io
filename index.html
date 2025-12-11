@@ -25,17 +25,17 @@
                 <h2 class="hero-title">Welcome to My GitHub Projects</h2>
                 <p class="hero-subtitle">Explore my open-source projects and contributions</p>
                 <div class="stats">
-                    <div class="stat-item">
+                    <div class="stat-item" onclick="scrollToProjects()" style="cursor: pointer;">
                         <i class="fas fa-code-branch"></i>
                         <span id="repo-count">0</span>
                         <span class="stat-label">Repositories</span>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item" onclick="scrollToProjects()" style="cursor: pointer;">
                         <i class="fas fa-star"></i>
                         <span id="star-count">0</span>
                         <span class="stat-label">Total Stars</span>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item" onclick="scrollToProjects()" style="cursor: pointer;">
                         <i class="fas fa-code"></i>
                         <span id="language-count">0</span>
                         <span class="stat-label">Languages</span>
@@ -51,7 +51,7 @@
         </div>
 
         <!-- Projects Grid -->
-        <section class="projects-section">
+        <section id="projects-section" class="projects-section">
             <h2 class="section-title">My Projects</h2>
             <div class="filters">
                 <button class="filter-btn active" data-filter="all">All</button>
