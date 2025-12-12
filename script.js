@@ -1,5 +1,5 @@
 // GitHub API Configuration
-const GITHUB_USERNAME = '1NF1N172';
+const GITHUB_USERNAME = '1NF';
 // Using public API (no authentication needed for public repos)
 // Note: Rate limit is 60 requests/hour for unauthenticated requests
 
