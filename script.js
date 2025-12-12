@@ -61,6 +61,9 @@ async function loadProjects() {
         // Filter out private repos if needed
         allProjects = allProjects.filter(p => !p.isPrivate);
 
+        // Sort by stars (descending) - most stars first
+        allProjects.sort((a, b) => b.stars - a.stars);
+
         updateStats();
         applyFilter();
         loading.classList.remove('show');
@@ -117,6 +120,8 @@ function applyFilter() {
         filteredProjects = allProjects;
     } else {
         filteredProjects = allProjects.filter(p => p.language === currentFilter);
+        // Maintain star-based sorting for filtered results
+        filteredProjects.sort((a, b) => b.stars - a.stars);
     }
 
     renderProjects();
